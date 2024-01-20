@@ -26,12 +26,12 @@ Backend de l'application Lingua Nature gérant l'envoi de mails via SendinBlue (
 
 ### 1. Envoi de Mail
 
-- **Endpoint:** `/api/send-email`
+- **Endpoint:** `/contact/submit`
 - **Méthode:** `POST`
 - **Paramètres Requis:**
-  - `to` : Adresse e-mail du destinataire
-  - `subject` : Objet du mail
-  - `template` : Nom du template à utiliser (présent dans le dossier `templates`)
+  - `name` : nom du sender
+  - `email` : email du sender
+  - `message` : contenue du mail 
 
 Exemple de requête :
 ```json
