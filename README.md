@@ -38,5 +38,5 @@ Exemple de requête :
 {
   "name": "Sujet du Mail",
   "email": "destinataire@example.com",
-  "message": "template_name"
+  "message": "I want to book a session"
 }
