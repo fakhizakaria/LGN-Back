@@ -8,12 +8,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/contact/submit")
-            .allowedOrigins("https://fakhizakaria.github.io/LGN1/") // Replace with your Angular app URL
-            .allowedOrigins("http://localhost:4200") // Replace with your Angular app URL
-            .allowedMethods("GET", "POST") // Add allowed HTTP methods
-            .allowedHeaders("*") // Allow all headers (you can configure specific headers)
-            .allowCredentials(true); // Allow credentials (if needed)
+        registry.addMapping("/**")
+                .allowedOrigins("http://3.80.203.228", "http://localhost:4200", "https://linguanature.world")
+                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }
-

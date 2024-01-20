@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .mailContainer {
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .mailHeader {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: #53ae47;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+    .mailHeader h1 {
+      color: white;
+      font-size: 1.8em;
+      font-weight: 100;
+      letter-spacing: 6px;
+    }
+    .mailContent {
+      color: #555;
+      line-height: 1.6;
+      width: 100%;
+      padding: 30px 40px;
+    }
+    .im {
+    color: #555;  
+    }
+    .mailFooter {
+      text-align: center;
+      background: #53ae47;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 100;
+      letter-spacing: 6.0px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }  
+  </style>
+</head>
+<body>
+<div class="mailContainer">
+  <div class="mailHeader">
+    <h1>Confirmation Email - Lingua Nature</h1>
+  </div>
+  <div class="mailContent">
+    <p>Hello {{NAME}},</p>
+    <p>Your message has been received successfully.</p>
+    <p>Message:</p>
+    <blockquote>{{MESSAGE}}</blockquote>
+    <p>We'll get back to you shortly.</p>
+    <p>Best regards,</p>
+    <p>Your Team</p>
+  </div>
+  <div class="mailFooter">
+    <p>Lingua Nature</p>
+  </div>
+</div>
+</body>
+</html>
